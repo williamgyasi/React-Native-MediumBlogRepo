@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import {Button,Icon} from 'native-base'
 
-export default Register =()=>{
+export default Register =({navigation})=>{
     const firestore_ref=firestore().collection('Users')
     //..
     const [fullname,setFullName]=useState('')

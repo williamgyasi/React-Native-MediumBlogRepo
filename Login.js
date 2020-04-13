@@ -19,7 +19,7 @@ export default Login =()=>{
         .auth()
         .signInWithEmailAndPassword(email.trim(),password)
         .then((user)=>{
-            alert('WELCOME' )
+            alert('WELCOME')
         })
         .catch((error)=>{
             alert(error)
