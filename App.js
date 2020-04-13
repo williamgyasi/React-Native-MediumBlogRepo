@@ -8,6 +8,12 @@ import {
 } from 'react-native';
 import {Button,Icon} from 'native-base'
 
+import Login from './Login'
+import Register from './Register'
+
+
+
+
 
 export default function App() {
 	return (
@@ -20,7 +26,9 @@ export default function App() {
                 </Text>
 
             <View style={styles.buttonPlaceholder}>
-                <Button style={styles.login}>
+                <Button
+                onPress={()=> alert('ajdjw') }
+                 style={styles.login}>
                 <Text style={styles.textstyle}>
                         Login
                     </Text>
