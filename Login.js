@@ -6,6 +6,9 @@ import {
 	TouchableOpacity,
     TextInput,
 } from 'react-native';
+import auth from '@react-native-firebase/auth';
+import {firebase} from '@react-native-firebase/auth'
+import firestore from '@react-native-firebase/firestore';
 import {Button,Icon} from 'native-base'
 
 export default Login =()=>{
@@ -76,6 +79,7 @@ export default Login =()=>{
            style={{
                borderRadius:20,
                padding:10,
+               marginTop:30,
                justifyContent:'center',
                backgroundColor:'green'
            }}>
@@ -97,12 +101,11 @@ export default Login =()=>{
 const styles =StyleSheet.create({
     container:{
         padding:20,
-        flex:1,
-        marginVertical:210
+        marginVertical:110
     },
     forms:{
         flexDirection:'column',
-        flex:1,
+        
     },
     textinput:{
             fontSize:20,
